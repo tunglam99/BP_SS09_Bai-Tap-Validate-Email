@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ValidateEmail(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    let email = "a@gmail.com";
+    console.log(ValidateEmail(email));
+
+    let email1 = "ab@yahoo.com";
+    console.log(ValidateEmail(email1));
+
+    let email2 = "@yahoo.com";
+    console.log(ValidateEmail(email2));
+
+</script>
+</body>
+</html>
